@@ -1,0 +1,44 @@
+<html>    
+<head>    
+    <title>Login Form</title>    
+    <link rel="stylesheet" type="text/css" href="style1.css">    
+</head>    
+<body>  
+<section id="hero">	
+    <div class="header-content">
+        <a href="login.html">
+	<button type="button" id="header-button"> Admin</button>
+    </a>
+	</div>
+	<div class="login">    
+    <form id="login" action="visitor.php" method="POST">    
+        <label><b>Username     
+        </b>    
+        </label>    
+        <input type="text" name="uname" id="uname" placeholder="Username">    
+        <br><br>    
+        <label><b>Entry Time  
+        </b>    
+        </label>    
+        <input type="text" name="entrytime" id="entime" placeholder="Entry Time">    
+        <br><br> 
+        <label><b>Visitation for 
+        </b>    
+        </label>    
+        <input type="text" name="visit" id="visit" placeholder="Enter the name of the person to meet">    
+        <br><br> 
+        <label><b>Reason
+        </b>    
+        </label>    
+        <input type="text" name="reason" id="reason" placeholder="State Reason">    
+        <br><br> 
+        <label><b>Exit Time  
+        </b>    
+        </label>    
+        <input type="text" name="exittime" id="extime" placeholder="Exit Time">    
+        <br><br> 
+        <button type="submit" id="button" name="save" action="visitor.php">Submit</button>		
+    </form>    
+</section>
+</body>    
+</html>   

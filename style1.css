@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box; 
+}
+html{
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif; 
+}
+body{
+    background-image:url(./img/hero-bg.png) ;   /*For background image*/
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;  
+}
+body::after{
+   content: '';
+   position: absolute;            /*To make the bg image with a black tranparent layer*/
+   left: 0;
+   top: 0;
+   height: 100%;
+   width: 100%;
+   background-color: black;
+   opacity: .7 ;
+   z-index: -1 ;
+}
+/*.header-content{
+top:0;
+text-align: center;
+background-color: #EDFFEF;
+border-bottom: 1px solid #6D7B8D;
+height: 15%
+
+}*/
+#header-button{  
+    margin-left: 1100px;
+    margin-top:20px;
+    width: 84px;
+    height: 45px;   
+    background: transparent;
+    border: 2px solid crimson;
+	border-radius: 25px;
+    color:white ;   
+    font-size:14px;
+    font-weight:700; 
+      	
+}
+#header-button:hover{
+    color: white;                    /*Description for type of animation effect on .cta*/
+    background-color: crimson;
+}
+#login{
+	margin-top:80px;
+	text-align:center;
+    font-size: 20px;
+	color:white;
+}
+#login label{
+	margin-left:30px;
+
+}
+#login input{
+ background: rgba(255,255,255,0.4);
+  border: none;
+  outline: none;
+  width: 300px;
+  height: 30p;
+  top:-27px;
+  margin-left:100px;
+  padding: 10px;
+  color: #333;
+  -webkit-box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
+  box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
+}
+::-webkit-input-placeholder { color: #666;} 
+:-moz-placeholder { color: #666; }
+::-moz-placeholder { color: #666; }
+:-ms-input-placeholder { color: #666; }
+#button{  
+    width: 84px;
+    height: 45px;   
+    background: transparent;
+    border: 2px solid crimson;
+	border-radius: 25px;
+    color:white ;   
+    font-size:14px;
+    font-weight:700; 
+}
+#button:hover{
+    color: white;                    /*Description for type of animation effect on .cta*/
+    background-color: crimson;
